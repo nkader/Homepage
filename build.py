@@ -1,4 +1,8 @@
 # First, get the template files
+from pathlib import Path
+
+templates_top = Path("templates/template_top.html")
+
 top = open('templates_top.html').read()
 bottom = open('templates_bottom.html').read()
 
