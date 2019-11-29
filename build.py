@@ -1,13 +1,18 @@
 # First, get the template files
-top_template = open('templates_top.html').read()
-bottom_template = open('templates_bottom.html').read()
+top = open('templates_top.html').read()
+bottom = open('templates_bottom.html').read()
 
 # Read in index HTML code
-content = open('content_index.html').read()
+indexcontent = open('index_content.html').read()
 
 # Combine template HTML code with content HTML code
-index_html = top_template + content + bottom_template
+index_html = top + indexcontent + bottom
 open('index.html', 'w+').write(index_html)
 
-content = open('contact_content.html').read()
-about_html = top_template + content + bottom_template
+contactcontent = open('contact_content.html').read()
+contact_html = top + contactcontent + bottom
+
+projectcontent = open('project_content').read()
+projects_html = top + projectcontent + bottom
+
+
